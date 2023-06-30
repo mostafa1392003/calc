@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="favicon-32x32.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contaner">
+      <div class="forms">
+        <div class="day" data-text="day">
+          <p>day</p>
+          <input type="number" name="day" id="day" />
+          <span id="validDay">
+            you must valid a day
+          </span>
+        </div>
+        <div class="month"data-text="month">
+          <p>month</p>
+          <input type="number" name="month" id="month"   />
+          <span id="validMonth">
+            you must valid a month
+          </span>
+        </div>
+        <div class="year"data-text="year">
+          <p>year</p>
+          <input type="number" name="year" id="year"   />
+          <span id="validYear">
+            you must valid a year
+          </span>
+        </div>
+      </div>
+      <div class="hr">
+        <hr />
+        <span onclick="calc()"><img src="icon-arrow.svg" alt="" /></span>
+      </div>
+      <div class="calced">
+        <div class="calc-year"><span id="calcedYear">...</span>years</div>
+        <div class="calc-month"><span id="calcedMonth">...</span>months</div>
+        <div class="calc-day"><span id="calcedDay">...</span>days</div>
+      </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="javaScript.js"></script>
+  </body>
+</html>

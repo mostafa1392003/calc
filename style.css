@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+}
+
+.contaner {
+    background-color: #fff;
+    width: 600px;
+    height: 450px;
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-bottom-right-radius: 150px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.forms {
+    display: flex;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #888;
+}
+
+.forms div {
+    width: 20%;
+   
+    margin-left: 15px;  
+      position: relative;
+}
+.forms div span {
+    font-size: 7px;
+    color: red;
+    font-style: italic;
+    display: none;
+}
+.forms input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    outline: none;
+
+}
+
+.forms input:focus {
+    border-color: orange;
+}
+
+.hr {
+    position: relative;
+    top: 20px;
+}
+
+.hr hr {
+    width: 80%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.hr span {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #864dfe;
+    border-radius: 50%;
+    top: -20px;
+    left: 81%;
+    cursor: pointer;
+}
+
+.hr span:hover {
+    background-color: black;
+}
+
+.hr span img {
+    width: 100%;
+
+}
+
+.calced {
+    width: 80%;
+    font-size: 80px;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    font-style: italic;
+    letter-spacing: 2px;
+
+}
+
+.calced div span {
+    color: #864dfe;
+    font-size: 60px;
+}
+
+@media(max-width:500px){
+    .contaner {
+        width: 90%;
+        height: 60vh;
+    }
+    .forms{
+        justify-content: space-between;
+        height: 10vh;
+    }
+    .hr hr {
+        width: 100%;
+    }
+    .hr span {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #864dfe;
+        border-radius: 50%;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+.calced{
+    font-size: 50px;
+    line-height: 1.8;
+}
+.calced div span{
+    font-size: 40px;
+}
+}
